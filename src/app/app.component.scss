@@ -1,0 +1,12 @@
+@import "../assets/styles/variables.scss";
+
+.app {
+  &_cont {
+    height: 11rem;
+  }
+
+  &_header_background {
+    height: 100%;
+    width: 100%;
+  }
+}

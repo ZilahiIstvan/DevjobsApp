@@ -1,0 +1,34 @@
+<div class="search_bar_cont">
+  <app-search-field
+    class="search_bar_left"
+    imgSrc="assets/imgs/icon-search.png"
+    defaultValue="Filter by title, companies, expertise..."
+  ></app-search-field>
+  <div class="search_bar_stripe"></div>
+  <app-search-field
+    class="search_bar_middle"
+    imgSrc="assets/imgs/icon-location.png"
+    defaultValue="Filter by location..."
+  ></app-search-field>
+  <div class="search_bar_stripe"></div>
+  <div class="search_bar_right">
+    <div class="search_bar_right_box_cont">
+      <div class="search_bar_right_box_icon_cont">
+        <input
+          class="search_bar_right_checkbox"
+          type="checkbox"
+          (click)="handleSearchBarCheckBox()"
+        />
+        <img
+          class="search_bar_right_box_icon"
+          src="../../assets/imgs/icon-check.png"
+          alt="image about a pipe"
+          *ngIf="fullTimeFilterFlag"
+          (click)="handleSearchBarCheckBox()"
+        />
+      </div>
+      <div class="search_bar_right_text">Full Time Only</div>
+    </div>
+    <app-button btnText="Search"></app-button>
+  </div>
+</div>

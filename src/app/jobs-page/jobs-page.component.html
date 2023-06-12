@@ -1,0 +1,18 @@
+<div class="jobs_page_cont">
+  <app-search-bar></app-search-bar>
+  <div class="jobs_page_card_cont">
+    <app-card
+      *ngFor="let item of data"
+      cardIconSrc="{{ item.compIcon }}"
+      cardIconBg="{{ item.compIconBg }}"
+      cardPosted="{{ item.posted }}"
+      cardjobType="{{ item.jobType }}"
+      cardTitle="{{ item.jobTitle }}"
+      cardSubtitle="{{ item.jobSubTitle }}"
+      cardLocation="{{ item.jobLocation }}"
+    ></app-card>
+  </div>
+  <div class="jobs_page_card_button">
+    <app-button btnText="Load More"></app-button>
+  </div>
+</div>

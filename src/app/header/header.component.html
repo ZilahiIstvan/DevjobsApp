@@ -1,0 +1,21 @@
+<div class="header_cont">
+  <div class="header_title">devjobs</div>
+  <div class="header_color_selector_cont">
+    <img
+      class="header_color_selector_sun"
+      src="assets/imgs/icon-sun.png"
+      alt="sun icon"
+    />
+    <input
+      class="header_color_selector_input"
+      [ngClass]="{ header_color_selector_input_modifier: colorModeFlag }"
+      type="checkbox"
+      (change)="changeCheckBox()"
+    />
+    <img
+      class="header_color_selector_moon"
+      src="assets/imgs/icon-moon.png"
+      alt="moon icon"
+    />
+  </div>
+</div>

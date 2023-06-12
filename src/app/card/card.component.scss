@@ -1,0 +1,66 @@
+@import "../../assets/styles/variables.scss";
+
+.job_card {
+  &_cont {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    color: $cardSubtitle;
+    background-color: $titlewhite;
+    border-radius: 0.5rem;
+    padding: 3rem 0 2rem 2rem;
+    width: 100%;
+
+    position: relative;
+    cursor: pointer;
+  }
+
+  &_icon {
+    &_cont {
+      display: flex;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 0.9rem;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      top: 0;
+      left: 2rem;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &_basic {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+    &_point {
+      width: 4px;
+      height: 4px;
+      background-color: $cardSubtitle;
+      border-radius: 50%;
+    }
+  }
+
+  &_title {
+    color: $cardTitle;
+    font-weight: bold;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
+  }
+
+  &_location {
+    color: $mainBluish;
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+}

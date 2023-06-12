@@ -1,0 +1,68 @@
+@import "../../assets/styles/variables.scss";
+
+.search_bar {
+  &_cont {
+    display: flex;
+    background-color: $titlewhite;
+    border-radius: 5px;
+  }
+
+  &_left {
+    flex: 2;
+  }
+
+  &_middle,
+  &_right {
+    flex: 1;
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    &_box {
+      &_cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+      }
+
+      &_icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+
+        width: 1.2rem;
+        height: 1.2rem;
+
+        &_cont {
+          position: relative;
+          display: inline-flex;
+        }
+      }
+    }
+
+    &_text {
+      font-weight: bold;
+    }
+
+    &_checkbox {
+      -webkit-appearance: none;
+      background-color: $checkBox;
+      width: 1.5rem;
+      height: 1.5rem;
+      cursor: pointer;
+      border-radius: 0.3rem;
+    }
+  }
+
+  &_stripe {
+    width: 2px;
+    background-color: $checkBox;
+  }
+}

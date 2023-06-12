@@ -1,0 +1,18 @@
+<div class="job_card_cont">
+  <div class="job_card_icon_cont" [style.background-color]="cardIconBg">
+    <img
+      class="job_card_icon"
+      src="{{ cardIconSrc }}"
+      alt="company icon"
+      class="job_card_icon"
+    />
+  </div>
+  <div class="job_card_basic">
+    {{ cardPosted }}
+    <div class="job_card_basic_point"></div>
+    {{ cardjobType }}
+  </div>
+  <div class="job_card_title">{{ cardTitle }}</div>
+  <div class="job_card_subtitle">{{ cardSubtitle }}</div>
+  <div class="job_card_location">{{ cardLocation }}</div>
+</div>
