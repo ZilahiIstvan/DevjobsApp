@@ -3,6 +3,13 @@
     class="title_filter_img"
     [src]="imgSrc"
     alt="filter title or filter location"
+    [ngClass]="{ title_filter_img_effect: filterFocused }"
   />
-  <input class="title_filter_input" type="text" [placeholder]="defaultValue" />
+  <input
+    class="title_filter_input"
+    type="text"
+    [placeholder]="defaultValue"
+    (focus)="handleSearchFieldFocus()"
+    (blur)="handleSearchFieldBlur()"
+  />
 </div>

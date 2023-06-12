@@ -18,6 +18,8 @@
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 1px;
+
+    animation: fadeIn 0.7s ease-in;
   }
 
   &_color_selector {
@@ -63,5 +65,22 @@
         }
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-60%);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }

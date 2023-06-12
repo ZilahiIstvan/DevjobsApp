@@ -8,4 +8,16 @@ import { Component, Input } from '@angular/core';
 export class SearchFieldComponent {
   @Input() imgSrc: string = '';
   @Input() defaultValue: string = '';
+
+  filterFocused: boolean = false;
+
+  handleSearchFieldFocus() {
+    this.filterFocused = true;
+    console.log('true');
+  }
+
+  handleSearchFieldBlur() {
+    this.filterFocused = false;
+    console.log('false');
+  }
 }
