@@ -4,10 +4,19 @@
   display: inline-flex;
   font-weight: bold;
   color: $titlewhite;
-  background-color: $mainBluish;
+  //background-color: $mainBluish;
   padding: 0.9rem 1.5rem;
   border-radius: 0.3rem;
   cursor: pointer;
   font-size: 0.9rem;
   letter-spacing: 1px;
+
+  background: linear-gradient(to right, $buttonHover 50%, $mainBluish 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    background-position: left;
+  }
 }

@@ -3,6 +3,7 @@
   <div class="jobs_page_card_cont">
     <app-card
       *ngFor="let item of data"
+      [cardId]="item.id"
       cardIconSrc="{{ item.compIcon }}"
       cardIconBg="{{ item.compIconBg }}"
       cardPosted="{{ item.posted }}"
