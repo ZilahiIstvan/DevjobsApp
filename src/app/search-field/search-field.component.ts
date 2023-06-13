@@ -11,12 +11,12 @@ export class SearchFieldComponent {
 
   filterFocused: boolean = false;
 
-  handleSearchFieldFocus() {
+  handleSearchFieldFocus(): void {
     this.filterFocused = true;
     console.log('true');
   }
 
-  handleSearchFieldBlur() {
+  handleSearchFieldBlur(): void {
     this.filterFocused = false;
     console.log('false');
   }

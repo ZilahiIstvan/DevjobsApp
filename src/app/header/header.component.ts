@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   colorModeFlag: boolean = false; // false - light, true - dark
 
-  changeCheckBox() {
+  changeCheckBox(): void {
     this.colorModeFlag = !this.colorModeFlag;
   }
 }

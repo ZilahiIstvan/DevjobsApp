@@ -5,5 +5,8 @@
     src="assets/imgs/bg-pattern-header_1.png"
     alt=""
   />
-  <app-jobs-page [data]="data"></app-jobs-page>
+  <app-jobs-page
+    [data]="filteredData"
+    [loadMoreClick]="changeDataSize"
+  ></app-jobs-page>
 </div>

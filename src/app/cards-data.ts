@@ -7,4 +7,9 @@ export interface CardsData {
   jobTitle: string;
   jobSubTitle: string;
   jobLocation: string;
+  website: string;
+  apply: string;
+  description: string;
+  requirements: { content: string; items: string[] };
+  role: { content: string; items: string[] };
 }

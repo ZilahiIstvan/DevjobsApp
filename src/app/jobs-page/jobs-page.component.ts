@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { CardsData } from '../cards-data';
 
@@ -18,6 +18,12 @@ export class JobsPageComponent {
       jobTitle: '',
       jobSubTitle: '',
       jobLocation: '',
+      website: '',
+      apply: '',
+      description: '',
+      requirements: { content: '', items: [] },
+      role: { content: '', items: [] },
     },
   ];
+  @Input() loadMoreClick: any;
 }
